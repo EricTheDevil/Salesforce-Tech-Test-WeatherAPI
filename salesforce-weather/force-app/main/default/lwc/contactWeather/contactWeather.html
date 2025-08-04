@@ -1,0 +1,38 @@
+<template>
+	<lightning-card class="contact-weather" title="Weather" icon-name="utility:world">
+		<div class="contact-weather__body">
+			<div class="contact-weather__header">
+				<div class="contact-weather__city">
+					<template lwc:if={snapshot}>
+						{snapshot.city}
+					</template>
+				</div>
+				<lightning-button class="contact-weather__refresh" label="Refresh Weather" onclick={refresh}
+					disabled={busy}>
+				</lightning-button>
+			</div>
+
+			<template lwc:if={snapshot}>
+				<div class="contact-weather__content">
+					<div class="contact-weather__icon-wrapper">
+						<template lwc:if={snapshot.iconUrl}>
+							<img class="contact-weather__icon" src={snapshot.iconUrl} />
+						</template>
+					</div>
+					<div class="contact-weather__details">
+						<div class="contact-weather__temperature">{temperature}</div>
+						<div class="contact-weather__condition">{snapshot.condition}</div>
+						<div class="contact-weather__captured">Captured: {capturedAt}</div>
+						<template lwc:if={snapshot.providerResponse}>
+							<div class="contact-weather__provider">Provider Status: {snapshot.providerResponse}</div>
+						</template>
+					</div>
+				</div>
+			</template>
+
+			<template lwc:else>
+				<div class="contact-weather__empty">No snapshot yet.</div>
+			</template>
+		</div>
+	</lightning-card>
+</template>
