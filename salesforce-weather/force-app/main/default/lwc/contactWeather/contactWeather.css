@@ -1,0 +1,51 @@
+.contact-weather__body {
+    padding: 1rem;
+}
+
+.contact-weather__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-weather__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.contact-weather__icon-wrapper {
+    flex: 1 1 64px;
+    text-align: center;
+}
+
+.contact-weather__icon {
+    width: 64px;
+    height: 64px;
+}
+
+.contact-weather__details {
+    flex: 2 1 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-weather__temperature {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.contact-weather__condition,
+.contact-weather__captured,
+.contact-weather__provider,
+.contact-weather__empty {
+    font-size: 0.875rem;
+}
+
+.contact-weather__captured,
+.contact-weather__provider,
+.contact-weather__empty {
+    color: #6b6d70;
+    margin-top: 0.25rem;
+}
