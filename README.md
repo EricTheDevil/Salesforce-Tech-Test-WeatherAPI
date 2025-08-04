@@ -1,2 +1,14 @@
-# Task-SF-Weather-API
- We all love talking about the weather and our customers are no different. In order to make the conversations with our customers easier we want to be able to see the weather for each of our customers in Salesforce. Using the Weather API (https://www.weatherapi.com/) we need to deliver the following requirements; Every hour retrieve and store the current weather condition and temperature for every Contact. If a Contact’s address details change update the weather conditions to represent those at the new address. Display a graphical representation of the stored weather condition and the temperature on the Contact’s record. Whilst viewing a Contact it must be possible for the User to refresh the weather and force it to get the current conditions and temperature from the API. If the weather details for a Contact are updated whilst a user has the record page open the representation on the page should automatically update to display the latest details. Any customisation such as flow, Apex of LWC, must be covered by unit tests.
+Salesforce Tech Test
+We all love talking about the weather and our customers are no different. In order to make the conversations with our customers easier we
+want to be able to see the weather for each of our customers in Salesforce.
+Using the Weather API (https://www.weatherapi.com/) we need to deliver the following requirements;
+Every hour retrieve and store the current weather condition and temperature for every Contact.
+If a Contact’s address details change update the weather conditions to represent those at the new address.
+Display a graphical representation of the stored weather condition and the temperature on the Contact’s record.
+Whilst viewing a Contact it must be possible for the User to refresh the weather and force it to get the current conditions and
+temperature from the API.
+If the weather details for a Contact are updated whilst a user has the record page open the representation on the page should
+automatically update to display the latest details.
+Any customisation such as flow, Apex of LWC, must be covered by unit tests.
+These requirements can be delivered using no-code, low-code or pro-code, we don’t mind how you do it but be prepared to explain why
+you used the methods that you have. Spend 2-3 hours max. on this task and anything that isn’t finished can be talked through later.
